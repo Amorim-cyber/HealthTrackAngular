@@ -1,10 +1,12 @@
 import { NgModule } from '@angular/core';
 import { InfoComponent } from './info.component';
+import { DetailsComponent } from './details/details.component';
 
 
 @NgModule({
   declarations: [
-    InfoComponent
+    InfoComponent,
+    DetailsComponent
   ],
   exports: [
     InfoComponent
