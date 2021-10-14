@@ -18,3 +18,7 @@ app-logo{
   justify-content: space-between;
 
 }
+
+app-info{
+  width: 100%;
+}
