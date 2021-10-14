@@ -1,0 +1,68 @@
+.logo{
+  height: 55%;
+  width: 21%;
+  background-color: var(--primary-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  padding-bottom: 3%;
+  border-radius: 0.25rem;
+
+  box-shadow: 0 0.1875rem 0.375rem rgba(0,0,0,0.16), 0 0.1875rem 0.375rem rgba(0,0,0,0.23);
+}
+
+.logo img{
+  width: 14em;
+  height: 14em;
+  color: var(--text-color);
+}
+
+.logo_name{
+  font-size: 350%;
+  font-weight: 700;
+  color: var(--text-color);
+}
+
+
+@media screen and (max-width:1401px){
+  .logo{
+      width: 30%;
+  }
+}
+
+@media screen and (max-width:1001px){
+  .logo{
+      width: 40%;
+  }
+}
+
+@media screen and (max-width:751px){
+  .logo{
+      width: 50%;
+  }
+}
+
+@media screen and (max-width:571px){
+  .logo{
+      width: 65%;
+  }
+}
+
+@media screen and (max-width:461px){
+  .logo{
+      width: 70%;
+  }
+}
+
+@media screen and (max-width:411px){
+  .logo_name{
+    font-size: 200%;
+  }
+
+  .logo img{
+      width: 8em;
+      height: 8em;
+  }
+}
+
