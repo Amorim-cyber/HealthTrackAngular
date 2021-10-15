@@ -1,7 +1,53 @@
 <header>
-  <a data-bs-toggle="offcanvas" href="#offcanvas" role="button" aria-controls="offcanvas">
+  <a (click)="isCollapsed = !isCollapsed" [attr.aria-expanded]="!isCollapsed"
+  role="button" aria-controls="offcanvas" aria-label="Toggle navigation">
       <i class="bi bi-list"></i>
   </a>
   {{titulo}}
   <div></div>
 </header>
+
+<div [ngbCollapse]="isCollapsed" id="offcanvas" aria-labelledby="offcanvasLabel">
+  <div class="offcanvas-header">
+      <header>
+          <div class="circle">L</div>
+          Lucas Mattos Amorim
+      </header>
+  </div>
+  <div class="offcanvas-body">
+      <div class="content">
+          <a>
+              <button>
+                  <div class="icon">
+                      <i class="bi bi-house-door"></i>
+                  </div>
+                  <span>Dashboard</span>
+              </button>
+          </a>
+          <a>
+              <button>
+                  <div class="icon">
+                      <i class="bi bi-person-fill"></i>
+                  </div>
+                  <span>Editar cadastro</span>
+              </button>
+          </a>
+          <a>
+              <button>
+                  <div class="icon">
+                      <i class="bi bi-pencil"></i>
+                  </div>
+                  <span>Editar pesos</span>
+              </button>
+          </a>
+          <a>
+              <button>
+                  <div class="icon">
+                      <i class="bi bi-door-open-fill"></i>
+                  </div>
+                  <span>Deslogar da conta</span>
+              </button>
+          </a>
+      </div>
+  </div>
+</div>

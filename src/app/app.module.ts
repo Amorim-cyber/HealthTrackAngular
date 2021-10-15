@@ -6,6 +6,7 @@ import { LoginModule } from './login/login.module';
 import { SharedModule } from './shared/shared.module';
 import { CadastroComponent } from './cadastro/cadastro.component';
 import { AppRoutingModule } from './app-routing.module';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { AppRoutingModule } from './app-routing.module';
     BrowserModule,
     LoginModule,
     AppRoutingModule,
-    SharedModule
+    SharedModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]
