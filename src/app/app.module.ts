@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import { LoginModule } from './login/login.module';
 import { SharedModule } from './shared/shared.module';
 import { CadastroComponent } from './cadastro/cadastro.component';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -14,6 +15,7 @@ import { CadastroComponent } from './cadastro/cadastro.component';
   imports: [
     BrowserModule,
     LoginModule,
+    AppRoutingModule,
     SharedModule
   ],
   providers: [],

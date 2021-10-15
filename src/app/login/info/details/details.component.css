@@ -66,8 +66,8 @@ label{
 label:after{
   content:'';
   position: absolute;
-  top: 0.5px;
-  left: 14px;
+  top: 1px;
+  left: 15px;
   width: 14px;
   height: 14px;
   background: var(--secondary-color);
