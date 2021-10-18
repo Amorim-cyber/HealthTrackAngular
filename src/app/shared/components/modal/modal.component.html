@@ -1,0 +1,49 @@
+<div class="modal fade" id="staticBackdrop1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+          <div class="item">
+              <input type="text" placeholder="Lucas Mattos Amorim">
+          </div>
+          <div class="item">
+              <input type="text" placeholder="amorim22lucas@gmail.com">
+          </div>
+          <div class="item">
+              <input type="number" placeholder="1,83">
+          </div>
+      </div>
+      <div class="modal-footer">
+          <div class="buttons">
+              <a data-bs-toggle="modal" data-bs-target="#staticBackdrop2">
+                  <button>Editar</button>
+              </a>
+              <a (click) = "goToCadastro()">
+                  <button>Voltar</button>
+              </a>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+          <div class="alert alert-success" role="alert">
+              <i class="bi bi-check-circle-fill"></i>
+         </div>
+          <div class="alert alert-success" role="alert">
+               Cadastro editado com sucesso!
+          </div>
+      </div>
+      <div class="modal-footer">
+          <div class="buttons">
+              <a (click) = "goToCadastro()">
+                  <button>ok</button>
+              </a>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>

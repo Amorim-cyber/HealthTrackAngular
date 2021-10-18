@@ -1,0 +1,96 @@
+.content{
+  width:100%;
+  height:92%;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.content a{
+  width:100%;
+  height:10%;
+  padding:0;
+}
+
+.content button{
+  width:100%;
+  height:100%;
+  border:none;
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  font-size:23px;
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.content button:hover{
+  border:solid var(--text-color) 3px;
+}
+
+
+.content .portrait{
+  width: 100%;
+  height: 70%;
+  color: var(--text-color);
+  border-bottom: solid var(--text-color) 0.125rem;;
+}
+
+.content .portrait .profile{
+  width: 100%;
+  height: 70%;
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  border-bottom: solid var(--text-color) 0.125rem;;
+}
+
+.content .portrait .profile .circle{
+  width:20rem;
+  height: 20rem;
+  border-radius: 20rem;
+  font-weight: 700;
+  font-size: 5.25rem;
+  background-color: var(--secondary-color);
+  display:flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-around;
+
+  box-shadow: 0 0.1875rem 0.375rem rgba(0,0,0,0.16), 0 0.1875rem 0.375rem rgba(0,0,0,0.23);
+}
+
+.content .portrait .description{
+  width: 100%;
+  height: 30%;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.content .portrait .description .item{
+  margin-left:1.5625rem;
+  font-weight: 500;
+  font-size: 1.25rem;
+}
+
+@media screen and (max-width:411px){
+
+  .content .portrait .profile .circle{
+      width:11.25rem;
+      height: 11.25rem;
+      border-radius: 11.25rem;
+      font-size: 3rem;
+  }
+
+}
+
+@media screen and (min-height:1366px){
+
+  .content .portrait .profile .circle{
+      width:23.75rem;
+      height: 23.75rem;
+      border-radius: 23.75rem;
+      font-size: 5.625rem;
+  }
+
+}
