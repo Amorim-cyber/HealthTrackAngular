@@ -27,5 +27,18 @@ header div{
   margin-right:0.625rem;
 }
 
+@media screen and (max-width:415px){
+  header{
+    font-size:1.2rem;
+  }
+
+  header a{
+    font-size:1.8rem;
+  }
+}
 
 
+@media screen and (max-width:361px){
+
+
+}
