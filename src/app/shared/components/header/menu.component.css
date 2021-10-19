@@ -1,7 +1,18 @@
+#offcanvas{
+  position: absolute;
+  top:0;
+  height: 100%;
+  width: 25%;
+  background-color: var(--secondary-color);
+}
+
 .offcanvas-header{
   background-color: var(--secondary-color);
   border-bottom: solid var(--text-color) 0.125rem;
   padding-left: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 .offcanvas-body{
   background-color: var(--secondary-color);
@@ -11,19 +22,22 @@
 
 .offcanvas-header header{
   justify-content: flex-start;
-
   background-color: var(--secondary-color);
   font-weight: 500;
   height: 100%;
   box-shadow: none;
 }
 
+.offcanvas-header button{
+  font-size: 130%;
+}
+
 .offcanvas-header header .circle{
   margin-right: 0.625rem;
   margin-left: 0.625rem;
-  width: 2.8125rem;
-  height: 2.8125rem;
-  border-radius: 2.8125rem;
+  width: 3.375rem;
+  height: 3.375rem;
+  border-radius: 3.375rem;
   font-weight: 700;
   text-align: center;
   display:flex;
@@ -79,7 +93,7 @@
   height: 2.8125rem;
   border-radius: 2.8125rem;
   font-weight: 700;
-  font-size: 120%;
+  font-size: 150%;
   text-align: center;
   display:flex;
   flex-direction: column;

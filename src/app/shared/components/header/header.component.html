@@ -1,5 +1,5 @@
 <header>
-  <a (click)="isCollapsed = !isCollapsed" [attr.aria-expanded]="!isCollapsed"
+  <a (click)="toggle()" [attr.aria-expanded]="!isCollapsed"
   role="button" aria-controls="offcanvas" aria-label="Toggle navigation">
       <i class="bi bi-list"></i>
   </a>
@@ -13,6 +13,8 @@
           <div class="circle">L</div>
           Lucas Mattos Amorim
       </header>
+      <button type="button" class="btn-close btn-close-white text-reset" (click)="toggle()"
+      data-bs-dismiss="offcanvas" aria-label="Close"></button>
   </div>
   <div class="offcanvas-body">
       <div class="content">

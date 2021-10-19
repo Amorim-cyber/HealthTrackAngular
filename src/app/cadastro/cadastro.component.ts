@@ -1,3 +1,4 @@
+import { FooterButtom } from './../shared/models/footerButtom';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -6,6 +7,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./cadastro.component.css']
 })
 export class CadastroComponent implements OnInit {
+
+  public footButtom: FooterButtom = {
+    isDisable: false
+  }
 
   constructor() { }
 

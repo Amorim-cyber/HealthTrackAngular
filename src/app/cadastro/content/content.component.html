@@ -1,0 +1,22 @@
+<div class="content">
+  <div class="portrait">
+      <div class="profile">
+          <div class="circle" >L</div>
+      </div>
+      <div class="description" >
+          <span class = "item">Lucas Mattos Amorim</span>
+          <span class = "item">amorim22lucas@gmail.com</span>
+          <span class = "item">1,83 m</span>
+      </div>
+  </div>
+
+  <a data-bs-toggle="modal" data-bs-target="#staticBackdrop1">
+      <button disabled *ngIf="footButtom.isDisable">
+      Editar Cadastro
+      </button>
+
+      <button *ngIf="!footButtom.isDisable" id="active">
+          Editar Cadastro
+      </button>
+  </a>
+</div>
