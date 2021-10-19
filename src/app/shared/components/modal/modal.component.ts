@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-modal',
@@ -8,13 +7,13 @@ import { Router } from '@angular/router';
 })
 export class ModalComponent implements OnInit {
 
-  constructor(private router: Router) { }
+  constructor() { }
 
   ngOnInit(): void {
   }
 
-  goToCadastro(){
-    this.router.navigateByUrl("/cadastro");
+  refresh(){
+    window.location.reload();
   }
 
 }
