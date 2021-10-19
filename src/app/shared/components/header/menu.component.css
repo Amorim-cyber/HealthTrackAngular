@@ -107,11 +107,34 @@
   color: var(--text-color-light);
 }
 
-@media screen and (max-width:412px){
-  .offcanvas-header header .circle{
-      width: 35px;
-      height: 35px;
-      border-radius: 35px;
-      font-size: 16px;
+@media screen and (max-width:1501px){
+  #offcanvas{
+    width: 35%;
   }
+}
+
+@media screen and (max-width:1051px){
+  #offcanvas{
+    width: 45%;
+  }
+}
+
+@media screen and (max-width:791px){
+  #offcanvas{
+    width: 65%;
+  }
+}
+
+@media screen and (max-width:551px){
+  #offcanvas{
+    width: 80%;
+  }
+}
+
+@media screen and (max-width:415px){
+
+  #offcanvas{
+    width: 100%;
+  }
+
 }
