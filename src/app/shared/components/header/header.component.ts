@@ -1,3 +1,4 @@
+import { Router } from '@angular/router';
 import { Component, OnInit, Input } from '@angular/core';
 import { ContentComponent } from 'src/app/cadastro/content/content.component';
 import { FooterButtom } from '../../models/footerButtom';
@@ -14,7 +15,7 @@ export class HeaderComponent implements OnInit {
   @Input() titulo!: string;
   @Input() footButtom!: FooterButtom;
 
-  constructor() { }
+  constructor(private router:Router) { }
 
   ngOnInit(): void {
 
@@ -23,6 +24,18 @@ export class HeaderComponent implements OnInit {
   toggle(){
     this.isCollapsed = !this.isCollapsed
     this.footButtom.isDisable = !this.footButtom.isDisable;
+  }
+
+  toCadastro(){
+    this.router.navigateByUrl("/cadastro");
+  }
+
+  toDashboard(){
+    this.router.navigateByUrl("/dashboard");
+  }
+
+  toLogin(){
+    this.router.navigateByUrl(" ");
   }
 
 }

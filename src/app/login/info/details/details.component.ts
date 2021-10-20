@@ -13,8 +13,8 @@ export class DetailsComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  goToCadastro(){
-    this.router.navigateByUrl("/cadastro");
+  goToDashboard(){
+    this.router.navigateByUrl("/dashboard");
   }
 
 }
