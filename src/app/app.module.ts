@@ -6,18 +6,18 @@ import { LoginModule } from './login/login.module';
 import { SharedModule } from './shared/shared.module';
 import { AppRoutingModule } from './app-routing.module';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { CadastroModule } from './cadastro/cadastro.module';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { CadastroComponent } from './cadastro/cadastro.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    DashboardComponent
+    CadastroComponent,
+    DashboardComponent,
   ],
   imports: [
     BrowserModule,
     LoginModule,
-    CadastroModule,
     AppRoutingModule,
     SharedModule,
     NgbModule
