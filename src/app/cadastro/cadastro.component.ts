@@ -1,5 +1,5 @@
-import { FooterButtom } from './../shared/models/footerButtom';
 import { Component, OnInit } from '@angular/core';
+import { Content } from '../shared/models/content';
 
 @Component({
   selector: 'app-cadastro',
@@ -8,8 +8,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CadastroComponent implements OnInit {
 
-  public footButtom: FooterButtom = {
-    isDisable: false
+  public content: Content = {
+    buttonDisable: false
   }
 
   constructor() { }

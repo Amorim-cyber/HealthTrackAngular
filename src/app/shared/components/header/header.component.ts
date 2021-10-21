@@ -1,6 +1,6 @@
 import { Router } from '@angular/router';
 import { Component, OnInit, Input } from '@angular/core';
-import { FooterButtom } from '../../models/footerButtom';
+import { Content } from '../../models/content';
 
 @Component({
   selector: 'app-header',
@@ -12,7 +12,7 @@ export class HeaderComponent implements OnInit {
   public isCollapsed = true;
 
   @Input() titulo!: string;
-  @Input() footButtom!: FooterButtom;
+  @Input() content!: Content;
 
   constructor(private router:Router) { }
 
@@ -22,7 +22,7 @@ export class HeaderComponent implements OnInit {
 
   toggle(){
     this.isCollapsed = !this.isCollapsed
-    this.footButtom.isDisable = !this.footButtom.isDisable;
+    this.content.buttonDisable = !this.content.buttonDisable;
   }
 
   toCadastro(){

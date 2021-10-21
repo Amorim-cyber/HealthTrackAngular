@@ -1,5 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { FooterButtom } from 'src/app/shared/models/footerButtom';
+import { Content } from '../../models/content';
+
 
 @Component({
   selector: 'app-content',
@@ -8,7 +9,7 @@ import { FooterButtom } from 'src/app/shared/models/footerButtom';
 })
 export class ContentComponent implements OnInit {
 
-  @Input() footButtom!: FooterButtom;
+  @Input() content!: Content;
 
   constructor() { }
 

@@ -3,11 +3,11 @@
   <app-content-cadastro></app-content-cadastro>
 
   <a data-bs-toggle="modal" data-bs-target="#staticBackdrop1">
-      <button disabled *ngIf="footButtom.isDisable">
+      <button disabled *ngIf="content.buttonDisable">
       Editar Cadastro
       </button>
 
-      <button *ngIf="!footButtom.isDisable" id="active">
+      <button *ngIf="!content.buttonDisable" id="active">
           Editar Cadastro
       </button>
   </a>

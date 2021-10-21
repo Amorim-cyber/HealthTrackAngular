@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FooterButtom } from '../shared/models/footerButtom';
+import { Content } from '../shared/models/content';
 
 @Component({
   selector: 'app-dashboard',
@@ -8,8 +8,8 @@ import { FooterButtom } from '../shared/models/footerButtom';
 })
 export class DashboardComponent implements OnInit {
 
-  public footButtom: FooterButtom = {
-    isDisable: false
+  public content: Content = {
+    buttonDisable: false
   }
 
   constructor() { }
