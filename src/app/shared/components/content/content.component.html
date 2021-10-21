@@ -1,14 +1,16 @@
 <div class="content">
 
-  <app-content-cadastro></app-content-cadastro>
+  <app-content-cadastro *ngIf="content.type=='cadastro'"></app-content-cadastro>
 
-  <a data-bs-toggle="modal" data-bs-target="#staticBackdrop1">
+  <app-content-dashboard *ngIf="content.type=='dashboard'"></app-content-dashboard>
+
+  <a *ngIf="content.hasButton" data-bs-toggle="modal" data-bs-target="#staticBackdrop1">
       <button disabled *ngIf="content.buttonDisable">
-      Editar Cadastro
+        Editar Cadastro
       </button>
 
       <button *ngIf="!content.buttonDisable" id="active">
-          Editar Cadastro
+        Editar Cadastro
       </button>
   </a>
 </div>

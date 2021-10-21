@@ -9,7 +9,9 @@ import { Content } from '../shared/models/content';
 export class CadastroComponent implements OnInit {
 
   public content: Content = {
-    buttonDisable: false
+    buttonDisable: false,
+    hasButton: true,
+    type: "cadastro"
   }
 
   constructor() { }
