@@ -79,6 +79,54 @@
   width: 1.875rem;
 }
 
+@media screen and (max-width:360px){
+
+  .table .head{
+    font-size: 16px;
+  }
+
+  .table .row{
+    font-size: 16px;
+  }
+
+  .table .row a{
+    width: 2.075rem;
+    height: 2.075rem;
+  }
+
+  .table .row button{
+    border-radius: 2.075rem;
+    font-size: 1rem;
+  }
+
+}
+
+@media screen and (max-width:320px){
+
+  .table .head{
+    font-size: 14px;
+  }
+
+  .table .row{
+    font-size: 14px;
+  }
+
+  .table .row a{
+    width: 1.875rem;
+    height: 1.875rem;
+  }
+
+  .table .row button{
+    border-radius: 1.875rem;
+    font-size: 1rem;
+  }
+
+  .table .row span{
+    width:6.25rem;
+  }
+
+}
+
 @media screen and (max-width:300px){
   .table .head span{
       width:80px;
