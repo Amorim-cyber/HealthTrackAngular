@@ -8,12 +8,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { CadastroComponent } from './cadastro/cadastro.component';
+import { PesoComponent } from './peso/peso.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CadastroComponent,
     DashboardComponent,
+    PesoComponent,
   ],
   imports: [
     BrowserModule,
