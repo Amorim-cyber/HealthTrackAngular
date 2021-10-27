@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { CadastroComponent } from './cadastro/cadastro.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { LoginComponent } from './login/login.component';
+import { PesoComponent } from './peso/peso.component';
 
 
 const routes: Routes = [
@@ -35,6 +36,15 @@ const routes: Routes = [
         {
           path: '',
           component: DashboardComponent
+        }
+    ]
+  },
+  {
+    path: 'peso',
+    children: [
+        {
+          path: '',
+          component: PesoComponent
         }
     ]
   }

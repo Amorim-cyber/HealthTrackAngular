@@ -37,4 +37,8 @@ export class HeaderComponent implements OnInit {
     this.router.navigateByUrl("/login");
   }
 
+  toPeso(){
+    this.router.navigateByUrl("/peso");
+  }
+
 }
