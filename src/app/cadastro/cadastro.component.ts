@@ -11,7 +11,7 @@ export class CadastroComponent implements OnInit {
   public content: Content = {
     buttonDisable: false,
     hasButton: true,
-    type: "cadastro"
+    type: "Cadastro"
   }
 
   constructor() { }

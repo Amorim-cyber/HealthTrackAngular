@@ -26,7 +26,7 @@
   border:solid var(--text-color) 3px;
 }
 
-app-content-cadastro{
+app-content-cadastro, app-content-peso{
   width: 100%;
   height: 100%;
 }

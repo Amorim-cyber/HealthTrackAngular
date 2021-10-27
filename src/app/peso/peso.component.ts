@@ -11,7 +11,7 @@ export class PesoComponent implements OnInit {
   public content: Content = {
     buttonDisable: false,
     hasButton: true,
-    type: "cadastro"
+    type: "Peso"
   }
 
   constructor() { }

@@ -11,7 +11,7 @@ export class DashboardComponent implements OnInit {
   public content: Content = {
     buttonDisable: false,
     hasButton: false,
-    type: "dashboard"
+    type: "Dashboard"
   }
 
   constructor() { }
