@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Content } from '../shared/models/content';
+import { Modal } from '../shared/models/modal';
 
 @Component({
   selector: 'app-peso',
@@ -7,6 +8,10 @@ import { Content } from '../shared/models/content';
   styleUrls: ['./peso.component.css']
 })
 export class PesoComponent implements OnInit {
+
+  public modal: Modal = {
+    type: "Peso"
+  }
 
   public content: Content = {
     buttonDisable: false,

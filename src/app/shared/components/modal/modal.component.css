@@ -22,7 +22,7 @@
   border:none;
   background-color: transparent;
   text-align: center;
-  font-size:18px;
+  font-size:22px;
   font-weight: 500;
   margin:0;
   padding:0;
@@ -57,7 +57,7 @@
   color:var(--text-color);
   border: none;
   background-color: transparent;
-  font-size: 1.125rem;
+  font-size: 1.225rem;
 }
 
 .modal-body .item input:focus{
@@ -78,7 +78,7 @@
   align-items: center;
   flex-direction: row;
   justify-content: space-around;
-  font-size: 18px;
+  font-size: 20px;
 }
 
 .modal-footer .buttons a{

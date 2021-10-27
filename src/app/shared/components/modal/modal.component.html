@@ -1,7 +1,7 @@
 <div class="modal fade" id="staticBackdrop1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
-      <div class="modal-body">
+      <div class="modal-body" *ngIf="modal.type=='Cadastro'">
           <div class="item">
               <input type="text" placeholder="Lucas Mattos Amorim">
           </div>
@@ -12,6 +12,16 @@
               <input type="number" placeholder="1,83">
           </div>
       </div>
+
+      <div class="modal-body" *ngIf="modal.type=='Peso'">
+        <div class="item">
+            <input type="text" onfocus="(this.type='date')" onblur="(this.type='date')" placeholder="data">
+        </div>
+        <div class="item">
+            <input type="number" placeholder="peso (kg)">
+        </div>
+      </div>
+
       <div class="modal-footer">
           <div class="buttons">
               <a data-bs-toggle="modal" data-bs-target="#staticBackdrop2">
@@ -34,7 +44,55 @@
               <i class="bi bi-check-circle-fill"></i>
          </div>
           <div class="alert alert-success" role="alert">
-               Cadastro editado com sucesso!
+               {{modal.type}} editado com sucesso!
+          </div>
+      </div>
+      <div class="modal-footer">
+          <div class="buttons">
+              <a (click) = "refresh()">
+                  <button>ok</button>
+              </a>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="staticBackdrop3" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+          <div class="alert alert-danger" role="alert">
+              <i class="bi bi-trash-fill"></i>
+         </div>
+          <div class="alert alert-danger" role="alert">
+               Tem certeza que deseja excluir?
+          </div>
+      </div>
+      <div class="modal-footer">
+          <div class="buttons">
+              <a data-bs-toggle="modal" data-bs-target="#staticBackdrop4">
+                  <button>sim</button>
+              </a>
+
+              <a (click) = "refresh()">
+                  <button>não</button>
+              </a>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="staticBackdrop4" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+          <div class="alert alert-success" role="alert">
+              <i class="bi bi-check-circle-fill"></i>
+         </div>
+          <div class="alert alert-success" role="alert">
+               Peso deletado com sucesso!
           </div>
       </div>
       <div class="modal-footer">

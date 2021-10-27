@@ -11,8 +11,11 @@
         Editar {{content.type}}
       </button>
 
-      <button *ngIf="!content.buttonDisable" id="active">
+      <button *ngIf="!content.buttonDisable && content.type=='Cadastro'"  id="active">
         Editar {{content.type}}
+      </button>
+      <button *ngIf="!content.buttonDisable && content.type=='Peso'"  id="active">
+        Adicionar {{content.type}}
       </button>
   </a>
 </div>
