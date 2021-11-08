@@ -1,0 +1,14 @@
+<div class="other_options" *ngIf="info.type=='Login'">
+  <a (click)="goToRecuperarSenha()">
+      <button>esqueci minha senha</button>
+  </a>
+  <a href="#">
+      <button>criar uma conta</button>
+  </a>
+</div>
+
+<div class="other_options" *ngIf="info.type!='Login'">
+  <a (click)="goToLogin()">
+      <button>voltar</button>
+  </a>
+</div>

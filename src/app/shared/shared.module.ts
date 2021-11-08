@@ -5,6 +5,8 @@ import { NgbCollapseModule } from '@ng-bootstrap/ng-bootstrap';
 import { ModalComponent } from './components/modal/modal.component';
 import { ContentComponent } from './components/content/content.component';
 import { ContentModule } from './components/content/content.module';
+import { InfoModule } from './components/info/info.module';
+import { InfoComponent } from './components/info/info.component';
 
 
 
@@ -16,12 +18,14 @@ import { ContentModule } from './components/content/content.module';
   exports: [
     HeaderComponent,
     ModalComponent,
-    ContentComponent
+    ContentComponent,
+    InfoComponent
   ],
   imports: [
     CommonModule,
     NgbCollapseModule,
-    ContentModule
+    ContentModule,
+    InfoModule
   ]
 })
 export class SharedModule { }

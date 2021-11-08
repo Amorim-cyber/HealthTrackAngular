@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { InfoModule } from './info/info.module';
+import { SharedModule } from '../shared/shared.module';
 import { LoginComponent } from './login.component';
 import { LogoComponent } from './logo/logo.component';
 
@@ -13,7 +13,7 @@ import { LogoComponent } from './logo/logo.component';
     LoginComponent
   ],
   imports: [
-    InfoModule
+    SharedModule
   ],
   providers: [],
   bootstrap: []

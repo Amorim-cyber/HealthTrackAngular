@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { Router } from '@angular/router';
+import { Info } from 'src/app/shared/models/info';
 
 @Component({
   selector: 'app-details',
@@ -7,6 +8,8 @@ import { Router } from '@angular/router';
   styleUrls: ['./details.component.css']
 })
 export class DetailsComponent implements OnInit {
+
+  @Input() info!: Info;
 
   constructor(private router: Router) { }
 

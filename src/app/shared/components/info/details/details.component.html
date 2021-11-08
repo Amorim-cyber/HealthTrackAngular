@@ -1,4 +1,4 @@
-<div class="details">
+<div class="details" *ngIf="info.type=='Login'">
   <form class="form" action="">
       <input class="field"type="text" placeholder="login">
       <input class="field"type="password" placeholder="senha">
@@ -11,4 +11,13 @@
   <a (click)="goToDashboard()">
       <input class="ok" type="submit" value="ok" >
   </a>
+</div>
+
+<div class="details" *ngIf="info.type=='Senha'">
+  <form class="form" action="">
+      <input class="field"type="text" placeholder="Digite aqui o seu e-mail">
+      <a data-bs-toggle="modal" data-bs-target="#staticBackdrop1" >
+        <input class="ok" type="submit" value="Enviar senha" style="font-size: 20px;">
+      </a>
+  </form>
 </div>

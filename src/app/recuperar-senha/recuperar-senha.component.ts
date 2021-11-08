@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Info } from '../shared/models/info';
 import { Modal } from '../shared/models/modal';
 
 @Component({
@@ -9,6 +10,10 @@ import { Modal } from '../shared/models/modal';
 export class RecuperarSenhaComponent implements OnInit {
 
   public modal: Modal = {
+    type: "Senha"
+  }
+
+  public info: Info = {
     type: "Senha"
   }
 
