@@ -1,6 +1,6 @@
 <div class="modal fade" id="staticBackdrop1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
   <div class="modal-dialog">
-    <div class="modal-content" *ngIf="modal.type!='Senha'">
+    <div class="modal-content" *ngIf="modal.type!='Senha' && modal.type!='Conta'">
       <div class="modal-body" *ngIf="modal.type=='Cadastro'">
           <div class="item">
               <input type="text" placeholder="Lucas Mattos Amorim">
@@ -34,13 +34,16 @@
       </div>
     </div>
 
-    <div class="modal-content" *ngIf="modal.type=='Senha'">
+    <div class="modal-content" *ngIf="modal.type=='Senha' || modal.type=='Conta'">
       <div class="modal-body">
         <div class="alert alert-success" role="alert">
             <i class="bi bi-check-circle-fill"></i>
        </div>
-        <div class="alert alert-success" role="alert">
+        <div class="alert alert-success" *ngIf="modal.type=='Senha'" role="alert">
              {{modal.type}} enviada com sucesso!
+        </div>
+        <div class="alert alert-success" *ngIf="modal.type=='Conta'" role="alert">
+          {{modal.type}} criada com sucesso!
         </div>
       </div>
       <div class="modal-footer">

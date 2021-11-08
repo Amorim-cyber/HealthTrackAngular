@@ -10,6 +10,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { CadastroComponent } from './cadastro/cadastro.component';
 import { PesoComponent } from './peso/peso.component';
 import { RecuperarSenhaComponent } from './recuperar-senha/recuperar-senha.component';
+import { CriarContaComponent } from './criar-conta/criar-conta.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { RecuperarSenhaComponent } from './recuperar-senha/recuperar-senha.compo
     DashboardComponent,
     PesoComponent,
     RecuperarSenhaComponent,
+    CriarContaComponent,
   ],
   imports: [
     BrowserModule,

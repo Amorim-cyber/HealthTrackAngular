@@ -13,6 +13,20 @@
   </a>
 </div>
 
+<div class="details" *ngIf="info.type=='Conta'">
+  <form class="form" action="">
+      <input class="field"type="text" placeholder="login">
+      <input class="field"type="text" placeholder="senha">
+      <input class="field"type="text" placeholder="confirmar senha">
+      <input class="field"type="text" placeholder="nome completo">
+      <input class="field"type="text" placeholder="e-mail">
+      <input class="field"type="text" placeholder="altura (m)">
+      <a data-bs-toggle="modal" data-bs-target="#staticBackdrop1">
+        <input class="ok" type="submit" value="Criar conta" style="font-size: 20px;">
+      </a>
+  </form>
+</div>
+
 <div class="details" *ngIf="info.type=='Senha'">
   <form class="form" action="">
       <input class="field"type="text" placeholder="Digite aqui o seu e-mail">

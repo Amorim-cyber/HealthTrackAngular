@@ -24,4 +24,8 @@ export class OtherOptionsComponent implements OnInit {
     this.router.navigateByUrl("/recuperarSenha");
   }
 
+  goToCriarConta(){
+    this.router.navigateByUrl("/criarConta");
+  }
+
 }
