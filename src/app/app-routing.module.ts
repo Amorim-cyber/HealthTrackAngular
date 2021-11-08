@@ -4,6 +4,7 @@ import { CadastroComponent } from './cadastro/cadastro.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { LoginComponent } from './login/login.component';
 import { PesoComponent } from './peso/peso.component';
+import { RecuperarSenhaComponent } from './recuperar-senha/recuperar-senha.component';
 
 
 const routes: Routes = [
@@ -45,6 +46,15 @@ const routes: Routes = [
         {
           path: '',
           component: PesoComponent
+        }
+    ]
+  },
+  {
+    path: 'recuperarSenha',
+    children: [
+        {
+          path: '',
+          component: RecuperarSenhaComponent
         }
     ]
   }

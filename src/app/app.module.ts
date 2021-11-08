@@ -9,6 +9,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { CadastroComponent } from './cadastro/cadastro.component';
 import { PesoComponent } from './peso/peso.component';
+import { RecuperarSenhaComponent } from './recuperar-senha/recuperar-senha.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { PesoComponent } from './peso/peso.component';
     CadastroComponent,
     DashboardComponent,
     PesoComponent,
+    RecuperarSenhaComponent,
   ],
   imports: [
     BrowserModule,
